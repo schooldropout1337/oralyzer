@@ -1,0 +1,25 @@
+# https://github.com/r0075h3ll/Oralyzer
+# oralyzer wayback.py's patch by chatgpt
+# replace existing wayback.py with this modded one.
+
+The error message indicates that you are encountering a "list index out of range" error in your code. This error occurs when you are trying to access an index that is outside the valid range of the list.
+
+In the specific code snippet you provided, the error is raised in the `fetcher` function at the line:
+
+```python
+
+print(unquote(jsonOutput[output][2]))
+
+```
+
+To troubleshoot this issue, you can try the following steps:
+
+1. Verify that the `jsonOutput` list is not empty. It's possible that the list is empty, which would result in the "list index out of range" error when trying to access elements.
+
+2. Check the structure of the `jsonOutput` list and ensure that it has the expected format. Make sure that the index `[output][2]` exists in the list elements.
+
+3. Confirm that the loop range `range(1, 1000, 1)` is appropriate for the size of the `jsonOutput` list. If the list is smaller than 1000 elements, it will result in an index out of range error.
+
+4. Consider adding additional checks and validations before accessing elements in the `jsonOutput` list to handle cases where the expected structure may not be present.
+
+By reviewing and addressing these points, you should be able to identify and resolve the "list index out of range" error in your code.
