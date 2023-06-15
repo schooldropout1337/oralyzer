@@ -1,5 +1,5 @@
 # https://github.com/r0075h3ll/Oralyzer
-# oralyzer wayback.py patch by chatgpt
+# oralyzer wayback.py's patch by chatgpt
 # replace existing wayback.py with this modded one.
 
 The error message indicates that you are encountering a "list index out of range" error in your code. This error occurs when you are trying to access an index that is outside the valid range of the list.
